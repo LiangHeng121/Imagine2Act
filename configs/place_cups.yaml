@@ -1,0 +1,15 @@
+# pipeline
+input_image: "./image/rgb/place_cups.png"
+prompt: "Do not remove any objects. Move the white mug from the table and hang it by the handle onto the rod protruding from the green vertical pole on the left."
+classes_combine: "white_cups on green_shelf"
+classes_ref: "green_shelf"
+output_dir: "./output/place_cups"
+output_ref_dir: "./output/place_cups/ref"
+
+# pipeline_2
+classes_manip: "white_cup"
+mesh_scale: 0.06
+scale_2: 1.5
+imagine_pcd: "./output/place_cups/pcd.ply"
+origin_mesh: "./output/place_cups/ref/mesh.obj"
+

@@ -1,0 +1,15 @@
+# pipeline
+input_image: "./image/rgb/put_toilet_roll_on_stand.png"
+prompt: "Generate an image where the paper roll is laid on the thinner paper stand in the scene. The paper roll is facing the top-right direction."
+classes_combine: "toilet paper roll, toilet paper stand"
+classes_ref: "white_stand"
+output_dir: "./output/put_toilet_roll_on_stand"
+output_ref_dir: "./output/put_toilet_roll_on_stand/ref"
+
+# pipeline_2
+classes_manip: "white_roll"
+mesh_scale: 0.06
+scale_2: 1.5
+imagine_pcd: "./output/put_toilet_roll_on_stand/pcd.ply"
+origin_mesh: "./output/put_toilet_roll_on_stand/ref/mesh.obj"
+

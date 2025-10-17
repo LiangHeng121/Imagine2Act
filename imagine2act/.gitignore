@@ -1,0 +1,73 @@
+PyRep/CoppeliaSim_Edu_V4_1_0_Ubuntu20_04/
+# 忽略数据集
+data/
+*.npz
+*.npy
+*.pkl
+*.h5
+*.hdf5
+*.zip
+*.aria2
+
+
+# 忽略模型权重和检查点
+*.pt
+*.pth
+*.ckpt
+checkpoints/
+ckpts/
+weights/
+*.safetensors
+
+# 忽略训练日志
+train_logs/
+*.log
+
+# 忽略缓存
+__pycache__/
+*.pyc
+
+# 忽略图片、视频（通常体积较大）
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.mp4
+*.avi
+
+# 忽略 VSCode / MacOS / Linux 临时文件
+.vscode/
+.DS_Store
+*.swp
+output/
+.ipynb_checkpoints
+output*
+*.jpg
+.cache*
+.mypy_cache
+*.sif
+*.pyc
+__pycache__
+.DS_Store
+._.DS_Store
+*.pkl
+*.png
+*.mp4
+*.swp
+*.egg-info/
+peract_model
+diffusion_taskABC_D-C192-B30-lr3e-4-DI1-20-Phistory_selfattn_epsilon_instrcond-H3-DT25-backboneclip-S256,256-R1-wd5e-3
+
+# train/test directory
+train_logs/
+eval_logs/
+temp/
+
+# third-party modules
+calvin/
+
+# data directory
+data/
+README_goal_frame_modes.md
+test_goal_frame_modes.py
+TECHNICAL_DOCUMENTATION.md

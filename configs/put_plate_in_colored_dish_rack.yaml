@@ -1,0 +1,15 @@
+# pipeline
+input_image: "./image/rgb/put_plate_in_colored_dish_rack.png"
+prompt: "Generate an image where the plate is inserted upright between the red rods of the dish rack. The plate is facing the higher-left direction."
+classes_combine: "plate dish rods rack"
+classes_ref: "rods rack"
+output_dir: "./output/put_plate_in_colored_dish_rack"
+output_ref_dir: "./output/put_plate_in_colored_dish_rack/ref"
+
+# pipeline_2
+classes_manip: "white_dish"
+mesh_scale: 0.07
+scale_2: 1.5
+imagine_pcd: "./output/put_plate_in_colored_dish_rack/pcd.ply"
+origin_mesh: "./output/put_plate_in_colored_dish_rack/ref/mesh.obj"
+

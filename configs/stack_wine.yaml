@@ -1,0 +1,15 @@
+# pipeline
+input_image: "./image/rgb/stack_wine.png"
+prompt: "Generate an image where the wine of this picture lie on the rack."
+classes_combine: "wine rack"
+classes_ref: "rack"
+output_dir: "./output/stack_wine"
+output_ref_dir: "./output/stack_wine/ref"
+
+# pipeline_2
+classes_manip: "wine"
+mesh_scale: 0.07
+scale_2: 1.7
+imagine_pcd: "./output/stack_wine/pcd.ply"
+origin_mesh: "./output/stack_wine/ref/mesh.obj"
+

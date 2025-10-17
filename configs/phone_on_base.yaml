@@ -1,0 +1,14 @@
+# pipeline
+input_image: "./image/rgb/phone_on_base.png"
+prompt: "Generate an image where the phone is on the phone base."
+classes_combine: "phone_base"
+classes_ref: "red_base"
+output_dir: "./output/phone_on_base"
+output_ref_dir: "./output/phone_on_base/ref"
+
+# pipeline_2
+classes_manip: "gray stick"
+mesh_scale: 0.07
+scale_2: 3.0
+imagine_pcd: "./output/phone_on_base/pcd.ply"
+origin_mesh: "./output/phone_on_base/ref/mesh.obj"

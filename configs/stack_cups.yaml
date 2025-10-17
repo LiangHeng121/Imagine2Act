@@ -1,0 +1,15 @@
+# pipeline
+input_image: "./image/rgb/stack_cups.png"
+prompt: "Stack the two cups tightly together, one inside another, with no visible gaps between them. The red cup should be at the bottom, the purple cup inside the red one."
+classes_combine: "cups"
+classes_ref: "red_cup"
+output_dir: "./output/stack_cups"
+output_ref_dir: "./output/stack_cups/ref"
+
+# pipeline_2
+classes_manip: "purple_cup"
+mesh_scale: 0.04
+scale_2: 2.5
+imagine_pcd: "./output/stack_cups/pcd.ply"
+origin_mesh: "./output/stack_cups/ref/mesh.obj"
+

@@ -1,0 +1,14 @@
+# pipeline
+input_image: "./image/rgb/put_knife_in_knife_block.png"
+prompt: "Generate an image where the knife insert in the knife block."
+classes_combine: "knife knife_block"
+classes_ref: "block"
+output_dir: "./output/put_knife_in_knife_block"
+output_ref_dir: "./output/put_knife_in_knife_block/ref"
+
+# pipeline_2
+classes_manip: "knife"
+mesh_scale: 0.03
+scale_2: 3.0
+imagine_pcd: "./output/put_knife_in_knife_block/pcd.ply"
+origin_mesh: "./output/put_knife_in_knife_block/ref/mesh.obj"
