@@ -11,7 +11,7 @@
 
 <!-- ![teaser](assets/teaser.png) -->
 <p align="center">
-  <img src="assets/teaser.png" alt="teaser" width="50%">
+  <img src="assets/teaser.png" alt="teaser" width="70%">
 </p>
 
 **Imagine2Act** is a 3D imitation learning framework that incorporates semantic and geometric object constraints into policy learning for high-precision manipulation. It generates imagined goal images conditioned on language instructions and reconstructs corresponding 3D point clouds as semantic–geometric priors for the policy. An object–action consistency strategy with soft pose supervision explicitly aligns predicted end-effector motions with generated object transformations, enabling accurate and consistent 3D action prediction across diverse tasks. Experiments in both simulation and the real world demonstrate that Imagine2Act outperforms previous state-of-the-art policies.
@@ -194,3 +194,4 @@ This code base is released under the MIT License (refer to the LICENSE file for 
 
 # Acknowledgement
 Parts of this codebase have been adapted from [3D Diffuser Actor](https://github.com/nickgkan/3d_diffuser_actor).
+
