@@ -1,4 +1,4 @@
-# Imagine2Act: Leveraging Object-Action Motion Consistency from Imagined Goals for Robotic Manipulation
+<h1 align="center">Imagine2Act: Leveraging Object-Action Motion Consistency from Imagined Goals for Robotic Manipulation</h1>
 <!-- By [Tsung-Wei Ke*](https://twke18.github.io/), [Nikolaos Gkanatsios*](https://nickgkan.github.io/) and [Katerina Fragkiadaki](https://www.cs.cmu.edu/~katef/) -->
 
 <p align="center">
@@ -194,5 +194,6 @@ This code base is released under the MIT License (refer to the LICENSE file for 
 
 # Acknowledgement
 Parts of this codebase have been adapted from [3D Diffuser Actor](https://github.com/nickgkan/3d_diffuser_actor).
+
 
 
