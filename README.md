@@ -84,7 +84,7 @@ Download the testing episodes from [(TODO: add link)](https://huggingface.co/you
 
 ## Prepare for training/validation episodes
 
-Download the packaged training/validation demonstrations from [(TODO: add link)](https://huggingface.co/your-packaged-link). Extract the zip file to `./imagine2act/data/packaged/`
+Download the packaged training/validation demonstrations from [here](https://huggingface.co/datasets/heng222/imagine2act_dataset). Extract the zip file to `./imagine2act/data/packaged/`
 
 
 ## Optional: Generate Data from Scratch
@@ -194,6 +194,7 @@ This code base is released under the MIT License (refer to the LICENSE file for 
 
 # Acknowledgement
 Parts of this codebase have been adapted from [3D Diffuser Actor](https://github.com/nickgkan/3d_diffuser_actor).
+
 
 
 
