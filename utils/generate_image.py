@@ -4,7 +4,7 @@ import base64
 import requests
 
 API_URL = "https://api.chatanywhere.tech/v1/images/edits"
-API_KEY = "sk-tYaEN7C1LxqhE2ELmjlMrJruFsca9bzJJgaN1Fv7var6t84V"
+API_KEY = ""
 if not API_KEY:
     sys.exit("Missing environment variable: OPENAI_API_KEY")
 
@@ -36,4 +36,5 @@ try:
 except Exception as e:
     print("Image generation failed:", e)
     print("Response:", response.text)
+
 
