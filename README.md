@@ -53,7 +53,7 @@ Create a conda environment with the following command:
 > echo "export LD_LIBRARY_PATH=\$LD_LIBRARY_PATH:\$COPPELIASIM_ROOT" >> $HOME/.bashrc;
 > echo "export QT_QPA_PLATFORM_PLUGIN_PATH=\$COPPELIASIM_ROOT" >> $HOME/.bashrc;
 > source $HOME/.bashrc;
-> conda activate 3d_diffuser_actor
+> conda activate imagine2act
 > pip install -r requirements.txt; pip install -e .; cd ..
 
 # Install RLBench (Note: there are different forks of RLBench)
