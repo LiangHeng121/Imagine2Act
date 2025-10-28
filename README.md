@@ -80,11 +80,11 @@ Each can be installed following the official instructions in their repositories.
 
 ## Prepare for testing episodes
 
-Download the testing episodes from [(TODO: add link)](https://huggingface.co/your-dataset-link) repo. Extract the zip files to `./imagine2act/data/raw/test/`
+Download the testing episodes from [here](https://huggingface.co/datasets/heng222/imagine2act-dataset-test) repo. Extract the zip files to `./imagine2act/data/raw/test/`
 
 ## Prepare for training/validation episodes
 
-Download the packaged training/validation demonstrations from [here](https://huggingface.co/datasets/heng222/imagine2act_dataset). Extract the zip file to `./imagine2act/data/packaged/`
+Download the packaged training/validation demonstrations from [here](https://huggingface.co/datasets/heng222/imagine2act-dataset). Extract the zip file to `./imagine2act/data/packaged/`
 
 
 ## Optional: Generate Data from Scratch
@@ -194,6 +194,7 @@ This code base is released under the MIT License (refer to the LICENSE file for 
 
 # Acknowledgement
 Parts of this codebase have been adapted from [3D Diffuser Actor](https://github.com/nickgkan/3d_diffuser_actor).
+
 
 
 
