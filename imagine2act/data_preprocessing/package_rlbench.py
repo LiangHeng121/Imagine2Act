@@ -129,19 +129,8 @@ class Dataset(torch.utils.data.Dataset):
         num_frames = len(frame_ids)
         attn_indices = get_attn_indices_from_demo(task, demo, args.cameras)
 
-        # 获取原始序列的最后一帧
-        last_obs_index = len(demo._observations) - 1
-        last_state, _ = self.env.get_obs_action(demo._observations[last_obs_index])
-        last_state = transform(last_state)
-        last_state_processed = einops.rearrange(
-            last_state.unsqueeze(0),
-            "1 (m n ch) h w -> n m ch h w",
-            ch=3,
-            n=len(args.cameras),
-            m=2,
-        )
 
-        state_dict: List = [[] for _ in range(7)]
+        state_dict: List = [[] for _ in range(6)]
         print("Demo {}".format(episode))
         state_dict[0].extend(frame_ids)
         state_dict[1] = state_ls[:-1].numpy()
@@ -149,7 +138,6 @@ class Dataset(torch.utils.data.Dataset):
         state_dict[3].extend(attn_indices)
         state_dict[4].extend(keyframe_action_ls[:-1])  # gripper pos
         state_dict[5].extend(intermediate_action_ls)   # traj from gripper pos to keyframe action
-        state_dict[6] = last_state_processed.numpy()  # original sequence last frame (goal frame)
 
         with open(taskvar_dir / f"ep{episode}.dat", "wb") as f:
             f.write(blosc.compress(pickle.dumps(state_dict)))

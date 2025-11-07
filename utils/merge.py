@@ -79,7 +79,7 @@ def load_map_csv(map_csv: Path):
             mapping[ep] = imdir
     return mapping
 
-def discover_pairs(orig_dir: Path, imag_dir: Path, map_csv: None):
+def discover_pairs(orig_dir: Path, imag_dir: Path, map_csv=None):
     eps = sorted(orig_dir.glob("ep*.dat"))
     imds = sorted([p for p in imag_dir.iterdir() if p.is_dir()])
 

@@ -13,6 +13,10 @@ import transformers
 from tqdm.auto import tqdm
 import torch
 
+import sys, os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+
 from utils.utils_with_rlbench import RLBenchEnv, task_file_to_task_class
 
 

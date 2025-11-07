@@ -26,7 +26,7 @@ CUDA_LAUNCH_BLOCKING=0 torchrun --nproc_per_node $ngpus --master_port $RANDOM \
     --train_iters 200000 \
     --embedding_dim $C \
     --use_instruction 1 \
-    --instructions ./instructions/instructions.pkl \
+    --instructions ./instructions.pkl \
     --rotation_parametrization 6D \
     --diffusion_timesteps $diffusion_timesteps \
     --val_freq 2000 \

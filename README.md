@@ -70,7 +70,7 @@ Each module should be installed in its own conda environment to avoid dependency
 | Module | Repository | Environment | Description |
 |---------|-------------|-------------|--------------|
 | **Grounded-Segment-Anything (GroundedSAM)** | [LiangHeng121/Grounded-Segment-Anything](https://github.com/LiangHeng121/Grounded-Segment-Anything) | `groundedsam` | 2D segmentation and text grounding |
-| **FoundationPose** | [NVlabs/FoundationPose](https://github.com/NVlabs/FoundationPose) | `foundationpose` | 6D object pose estimation |
+| **FoundationPose** | [LiangHeng121/FoundationPose](https://github.com/LiangHeng121/FoundationPose) | `foundationpose` | 6D object pose estimation |
 | **TripoSR** | [LiangHeng121/TripoSR](https://github.com/LiangHeng121/TripoSR) | `triposr` | 3D reconstruction from a single image |
 
 Each can be installed following the official instructions in their repositories.  

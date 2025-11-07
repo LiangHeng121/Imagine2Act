@@ -8,7 +8,7 @@ output_ref_dir: "./output/place_cups/ref"
 
 # pipeline_2
 classes_manip: "white_cup"
-mesh_scale: 0.06
+mesh_scale: 0.24
 scale_2: 1.5
 imagine_pcd: "./output/place_cups/pcd.ply"
 origin_mesh: "./output/place_cups/ref/mesh.obj"

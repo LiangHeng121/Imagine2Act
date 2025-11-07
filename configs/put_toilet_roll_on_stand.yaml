@@ -8,7 +8,7 @@ output_ref_dir: "./output/put_toilet_roll_on_stand/ref"
 
 # pipeline_2
 classes_manip: "white_roll"
-mesh_scale: 0.06
+mesh_scale: 0.24
 scale_2: 1.5
 imagine_pcd: "./output/put_toilet_roll_on_stand/pcd.ply"
 origin_mesh: "./output/put_toilet_roll_on_stand/ref/mesh.obj"

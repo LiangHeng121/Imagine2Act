@@ -46,6 +46,7 @@ END
 )
 
 ROOT_EP_DIR="./imagine2act/data/raw/${SPLIT}/${TASK_NAME}/variation0/episodes"
+ROOT_EP_DIR=$(realpath "$ROOT_EP_DIR")
 
 # -------- Print Loaded Variables --------
 echo "Loaded config for task: $TASK_NAME"
@@ -155,10 +156,6 @@ EOF
     echo "[9/16] Copying and refining pose..."
     cp "$OUTPUT_DIR/fp_output/ob_in_cam/image.txt" "$OUTPUT_DIR/pose.txt"
     conda run -n "$ENV_FOUNDATIONPOSE" python utils/flip_pose.py "$OUTPUT_DIR/pose.txt" "$OUTPUT_DIR/pose_flip.txt"
-
-    # conda run -n "$ENV_TRIPOSR" python bg/scale_pose_t.py "$OUTPUT_DIR/pose.txt" "$OUTPUT_DIR/pose_scaled.txt" --scale 4.5
-    # conda run -n "$ENV_FOUNDATIONPOSE" python bg/flip_pose.py "$OUTPUT_DIR/pose_scaled.txt" "$OUTPUT_DIR/pose_flip.txt"
-
 
     # Step 10: Align and Fuse TripoSR Point Cloud with Scene
     echo "[10/16] Aligning and fusing point clouds..."
