@@ -13,6 +13,10 @@ import numpy as np
 import einops
 from rlbench.demo import Demo
 
+import sys, os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+
 from utils.utils_with_rlbench import (
     RLBenchEnv,
     keypoint_discovery,
