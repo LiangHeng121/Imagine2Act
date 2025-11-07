@@ -97,7 +97,7 @@ Generate raw RLBench episodes and package them into `.dat` files for one or mult
 
 ```bash
 cd imagine2act
-bash scripts/data_generation.sh <split> <task1> [task2] [task3] ...
+bash scripts/data_generation.sh <split> [task1] [task2] [task3] ...
 # Example:
 bash scripts/data_generation.sh train phone_on_base place_cups stack_cups
 cd ..

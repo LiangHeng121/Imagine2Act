@@ -5,7 +5,7 @@ shift
 TASKS=("$@")   # e.g. bash data_generation.sh train phone_on_base place_cups stack_cups
 
 if [ -z "$SPLIT" ] || [ ${#TASKS[@]} -eq 0 ]; then
-    echo "Usage: bash data_generation.sh <split> <task1> [task2] [task3] ..."
+    echo "Usage: bash data_generation.sh <split> [task1] [task2] [task3] ..."
     echo "Example: bash data_generation.sh train phone_on_base place_cups stack_cups"
     exit 1
 fi
@@ -24,7 +24,7 @@ for TASK in "${TASKS[@]}"; do
     echo "Processing task: $TASK"
 
     # Step 1: Generate raw RLBench episodes
-    python ./RLBench/tools/dataset_generator.py \
+    xvfb-run -a python ./RLBench/tools/dataset_generator.py \
         --save_path="$RAW_SAVE_PATH" \
         --tasks="$TASK" \
         --image_size=256,256 \
@@ -39,7 +39,7 @@ for TASK in "${TASKS[@]}"; do
         --output="$PACKAGE_SAVE_PATH" \
         --store_intermediate_actions=1
 
-    echo "✅ Finished task: $TASK"
+    echo "Finished task: $TASK"
     echo "---------------------------------------------"
 done
 
